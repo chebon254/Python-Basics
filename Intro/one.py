@@ -400,3 +400,33 @@ if txt_re:
   print("YES! We have a match!")
 else:
   print("No match")
+
+
+
+print ("\n")
+# get_user_name = input("Enter username: ")
+# get_user_password = input("Enter password: ")
+# print("\n")
+# print("Access granted!")
+# print("Welcome, " + get_user_name + " you may proceed to the next process")
+
+# new_file = open("demofile.txt", "r")
+# print(new_file.read())
+# new_file.close()
+
+
+# new_file = open("demofile.txt", "a")
+# new_file.write("5 Chebon Mercy")
+# new_file.close()
+
+# print ("\n")
+
+# new_file = open("demofile.txt", "r")
+# print(new_file.read())
+# new_file.close()
+
+import os
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+else:
+  print("The file does not exist")
