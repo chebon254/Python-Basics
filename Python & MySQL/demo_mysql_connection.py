@@ -4,7 +4,7 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   password="",
-  database="mydatabase"
+  database="Shop"
 )
 
 mycursor = mydb.cursor()
@@ -146,9 +146,8 @@ mycursor = mydb.cursor()
 
 # LIMIT
 
-mycursor.execute("SELECT * FROM customers LIMIT 5")
+mycursor.execute("INSERT INTO `Customers`(CustomerName, CustomerContact, Address, City, Code, Country) VALUES ('Cardinal','Tom B. Erichsen','Skagen','Stavanger','4006','Norway')")
 
 myresult = mycursor.fetchall()
-
 for x in myresult:
   print(x)
